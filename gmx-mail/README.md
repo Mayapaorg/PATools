@@ -125,4 +125,4 @@ Also available: `/v1/search`, `/v1/messages/{uid}`, attachments, flags, move, de
 
 ## Note: self-sent mail
 
-GMX often delivers mail you send **to your own address** into **Spam**, not the inbox. Check Spam (or move the message) when testing send/receive against yourself.
+The **first** mail you send to your own GMX address may land in **Spam**. Mark it **Not Spam** once in GMX webmail; later self-sent messages should reach the inbox normally.
