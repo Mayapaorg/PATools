@@ -1,0 +1,42 @@
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+credentials*
+*secret*
+gmx-credentials*
+.gmx*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Node / web
+node_modules/
+.node_modules.lock
+.tanstack/
+.vercel/
+.output/
+.nitro/
+
+# Local / QA artifacts
+artifacts/
+screenshots/
+.grok/preview.log
+.grok/status
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

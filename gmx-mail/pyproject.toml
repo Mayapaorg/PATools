@@ -1,0 +1,11 @@
+[project]
+name = "gmxmail"
+version = "1.0.0"
+description = "Python API and CLI for a GMX mailbox over IMAP and SMTP"
+requires-python = ">=3.10"
+
+[project.scripts]
+gmxmail = "gmxmail.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gmxmail*"]

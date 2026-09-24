@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+
+  --color-paper: #f3efe6;
+  --color-card: #fbf8f2;
+  --color-ink: #1c1915;
+  --color-muted: #6f675c;
+  --color-line: #e3d9cb;
+  --color-primary: #1e4668;
+  --color-on-primary: #f7f3ea;
+  --color-seal: #b5522a;
+  --color-on-seal: #fff7f2;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-primary) 22%, var(--color-card));
+    color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  button, a, input, textarea, select {
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+}
